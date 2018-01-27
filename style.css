@@ -1,0 +1,89 @@
+
+html, body {
+	margin: 0;
+}
+
+body {
+	background-color: #CFD0CF;
+}
+
+.shadow {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, .3);
+	z-index: 2;
+}
+
+.container {
+	position: relative;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h1 {
+	margin: 40px 0 40px 0;
+	color: #434344;
+	font: bold 42px/47px Arial;
+}
+
+.cards-wrapper {
+	width: 595px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.card {
+	box-sizing: border-box;
+	width: 130px;
+	height: 130px;
+	margin: 0 0 25px 0;
+	border: 5px solid white;
+	border-radius: 9px;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+	transition: transform 1s;
+	transform-style: preserve-3d;
+	cursor: pointer;
+}
+
+.back {
+	background-image: linear-gradient(to right, #22AB93, #19668D);
+}
+
+.front {
+	background-color: white;
+	font-size: 75px;
+	text-align: center;
+}
+
+.timer {
+	font-size: 72px;
+	color: #434344;
+}
+
+.alert {
+	position: absolute;
+	top: 50%;
+	height: 150px;
+	width: 270px;
+	background-image: linear-gradient(to right, #22AB93, #19668D);
+	border: 5px solid white;
+	border-radius: 9px;
+	z-index: 3;
+	font-size: 45px;
+	font-style: italic;
+	text-align: center;
+	line-height: 75px;
+}
+
+.alert button {
+	height: 50px;
+	width: 130px;
+	font-size: 30px;
+	border: 2px solid #434344;
+	border-radius: 9px;
+	background-color: #CFD0CF;
+}
